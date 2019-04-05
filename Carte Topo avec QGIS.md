@@ -1,6 +1,6 @@
 # Carte Topo avec QGIS
 
-On propose ici de réaliser un équivalent de la carte topographique de l'I.G.N. avec QGIS et des données ouvertes (ou presque) et gratuites. 
+On propose ici de réaliser un équivalent d'une carte topographique de l'IGN avec QGIS et des données ouvertes (ou presque) et gratuites. 
 
 Ce tuto comporte beaucoup trop de GIF (fallait bien que je m'amuse à l'écrire aussi).
 
@@ -17,7 +17,7 @@ Allez ! On se lance sur QGIS !
 
 ## Données utilisées
 
-- Hydrographie : on utilise la BD TOPO-HYDROGRAPHIE de l'I.G.N., avec les couches SURFACE_EAU et TRONCON_COURS_EAU (http://professionnels.ign.fr/bdtopo-hydrographie) et la BD Sandre pour les labels (http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/0a0977fa-746b-441d-b4c1-4bf5e36998b0)
+- Hydrographie : on utilise la BD TOPO-HYDROGRAPHIE de l'IGN, avec les couches SURFACE_EAU et TRONCON_COURS_EAU (http://professionnels.ign.fr/bdtopo-hydrographie) et la BD Sandre pour les labels (http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/0a0977fa-746b-441d-b4c1-4bf5e36998b0)
 - Bâtiments : extraction depuis le cadastre Etalab (https://cadastre.data.gouv.fr/datasets/cadastre-etalab et sélectionner la couche bâtiments)
 - Réseaux de transport : extraction O.S.M. (https://export.hotosm.org/en/v3/exports/new/select/treetag sélectionner dans Transportation : Roads & Railway)
 - Communes : Geofla / AdminExpress (http://professionnels.ign.fr/adminexpress) + export OSM https://www.data.gouv.fr/fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/
@@ -714,7 +714,7 @@ out skel qt;
 
 Je ne prends ici que les lieux-dits/hameaux "habités", pas les lieux-dits cadastraux qui d'une part sont des polygones et d'autre part et aussi par conséquent représentent souvent assez mal le territoire concerné par le nom que la DGFiP leur a attribué. Un certain nombre de ces lieux existent dans OSM, mais je suis forcé d'avouer que j'ai dû en créer un certain nombre pour que cela donne quelque chose de suffisant.
 
-Donc s'il vous manque également des lieux-dits par rapport à la carte topo I.G.N., n'hésitez pas à les rajouter dans OSM : Ajouter un point > le placer à côté du groupe de bâtiments concernés par le nom du lieu > Choisir Lieu-dit ou hameau
+Donc s'il vous manque également des lieux-dits par rapport à la carte topo IGN, n'hésitez pas à les rajouter dans OSM : Ajouter un point > le placer à côté du groupe de bâtiments concernés par le nom du lieu > Choisir Lieu-dit ou hameau
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401720976.png)
 
