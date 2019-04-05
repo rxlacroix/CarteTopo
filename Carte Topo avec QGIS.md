@@ -17,12 +17,11 @@ Allez ! On se lance sur QGIS !
 
 ## Données utilisées
 
-- Hydrographie : on utilise la BD TOPO-HYDROGRAPHIE de l'IGN, avec les couches SURFACE_EAU et TRONCON_COURS_EAU (http://professionnels.ign.fr/bdtopo-hydrographie) et la BD Sandre pour les labels (http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/0a0977fa-746b-441d-b4c1-4bf5e36998b0)
-- Bâtiments : extraction depuis le cadastre Etalab (https://cadastre.data.gouv.fr/datasets/cadastre-etalab et sélectionner la couche bâtiments)
-- Réseaux de transport : extraction O.S.M. (https://export.hotosm.org/en/v3/exports/new/select/treetag sélectionner dans Transportation : Roads & Railway)
-- Communes : Geofla / AdminExpress (http://professionnels.ign.fr/adminexpress) + export OSM https://www.data.gouv.fr/fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/
-- Relief : le EU-DEM de Copernicus. La résolution est de 25m, on peut le rééchantilloner afin d'obtenir quelque chose de plus fin et lisse (https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1)
-- Occupation du sol : vecteur départemental par le CESBIO (http://osr-cesbio.ups-tlse.fr/~oso/)
+- Hydrographie : on utilise la BD TOPO-HYDROGRAPHIE de l'IGN, avec les couches [SURFACE_EAU et TRONCON_COURS_EAU](http://professionnels.ign.fr/bdtopo-hydrographie) et la [BD Sandre](http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/0a0977fa-746b-441d-b4c1-4bf5e36998b0) pour les labels
+- Bâtiments : extraction depuis le [cadastre Etalab](https://cadastre.data.gouv.fr/datasets/cadastre-etalab) et sélectionner la couche bâtiments
+- Communes : [Geofla / AdminExpress](http://professionnels.ign.fr/adminexpress) + [export OSM](https://www.data.gouv.fr/fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/)
+- Relief : le [EU-DEM de Copernicus](https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1). La résolution est de 25m, on peut le rééchantilloner afin d'obtenir quelque chose de plus fin et lisse
+- Occupation du sol : vecteur départemental par le [CESBIO](http://osr-cesbio.ups-tlse.fr/~oso/)
 - Données OSM via : https://overpass-turbo.eu/
 
 ## 1. Éléments de base
