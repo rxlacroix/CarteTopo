@@ -85,7 +85,7 @@ Je vous conseille d'enregistrer directement les résultats dans un fichier plut�
 
 On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisi) qui sera appelée relief dans la suite du tuto.
 
-Prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la [bonne perception du relief](https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
+Prenons un moment pour [observer le rendu de la topographie](https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes). Deux éléments principaux participent à la bonne perception du relief.
 
 - les courbes de niveau, de couleur "whiskey", avec un épaississement et l'inscription de l'altitude pour celles multiples de 50 (en gros). Écartement de 5 ou 10 m selon les endroits
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
@@ -197,6 +197,8 @@ Les couches vont se déformer.
 Aux différentes échelles, nos couches se comportent relativement bien, on considère donc que c'est suffisant.
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216979662.png)
+
+On ajoute [plus bas] la suite les bornes kilométriques et géodésiques pour les points cotés.
 
 ### 1.2 Hydrographie
 
