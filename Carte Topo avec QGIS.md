@@ -84,9 +84,7 @@ Je vous conseille d'enregistrer directement les résultats dans un fichier plut�
 
 On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisi) qui sera appelée relief dans la suite du tuto.
 
-Prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la bonne perception du relief :
-
-(https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
+Prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la ![bonne perception du relief](https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
 
 - les courbes de niveau, de couleur "whiskey", avec un épaississement et l'inscription de l'altitude pour celles multiples de 50 (en gros). Écartement de 5 ou 10 m selon les endroits
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
@@ -183,7 +181,7 @@ Avec le deuxième par-dessus :
 
 ![1554216813106](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
 
-![bla](https://i.gifer.com/6Cv9.gif)
+![bla](https://i.gifer.com/6Cv9.webp)
 
 Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
 
@@ -210,7 +208,8 @@ Pour l'hydrographie, une seule source de données ne donnant pas satisfaction, j
 Pour plus de praticité, je vous conseille de créer un sous-ensemble de chaque couche spécifique à votre zone d'intérêt, ce sera plus facile à travailler et styliser.
 
 ``` Traitement > Gdal > Découper des vecteurs selon une emprise ```
-> et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
+
+et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
 
 #### 1.2.1 Surfaces
 
@@ -654,7 +653,7 @@ Pour cela, on a recours encore une fois à l'api d'overpass, avec maintenant la 
 
 Requête lieux-dits : 
 
->```Overpass QL
+```
 >[out:json][timeout:50];
 >// gather results
 >(
@@ -667,18 +666,19 @@ Requête lieux-dits :
 >out body;
 >
 >> ;
->out skel qt;
->```
->
->Je ne prends ici que les lieux-dits/hameaux "habités", pas les lieux-dits cadastraux qui d'une part sont des polygones et d'autre part et aussi par conséquent représentent souvent assez mal le territoire concerné par le nom que la DGFiP leur a attribué. Un certain nombre de ces lieux existent dans OSM, mais je suis forcé d'avouer que j'ai dû en créer un certain nombre pour que cela donne quelque chose de suffisant.
->
->Donc si vous aussi il vous manque des lieux-dits par rapport à la carte topo I.G.N., n'hésitez pas à les rajouter dans OSM : Ajouter un point > le placer à côté du groupe de bâtiments concernés par le nom du lieu > Choisir Lieu-dit ou hameau
->
->![1554401720976](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401720976.png)
->
->Ces changements seront répercutés rapidement sur un certain nombre de tiles OSM pour le web, aussi soyez suffisamment rigoureux quand vous effectuez ces ajouts.
->
->![1554401883558](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401883558.png)
+out skel qt;
+```
+
+
+Je ne prends ici que les lieux-dits/hameaux "habités", pas les lieux-dits cadastraux qui d'une part sont des polygones et d'autre part et aussi par conséquent représentent souvent assez mal le territoire concerné par le nom que la DGFiP leur a attribué. Un certain nombre de ces lieux existent dans OSM, mais je suis forcé d'avouer que j'ai dû en créer un certain nombre pour que cela donne quelque chose de suffisant.
+
+Donc s'il vous manque également des lieux-dits par rapport à la carte topo I.G.N., n'hésitez pas à les rajouter dans OSM : Ajouter un point > le placer à côté du groupe de bâtiments concernés par le nom du lieu > Choisir Lieu-dit ou hameau
+
+![1554401720976](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401720976.png)
+
+Ces changements seront répercutés rapidement sur un certain nombre de tiles OSM pour le web, aussi soyez suffisamment rigoureux quand vous effectuez ces ajouts.
+
+![1554401883558](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401883558.png)
 
 On charge le json obtenu dans QGIS et on applique la symbologie suivante : 
 
