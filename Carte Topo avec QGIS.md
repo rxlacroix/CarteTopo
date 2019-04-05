@@ -212,7 +212,7 @@ Pour plus de praticité, je vous conseille de créer un sous-ensemble de chaque 
 ``` Traitement > Gdal > Découper des vecteurs selon une emprise ```
 > et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
 
-On commence par charger la couche SURFACE_EAU. Ce qu'on remarque vite, c'est que les surfaces ne sont pas continues. Par exemple,différents polygones coexistent pour cette même rivière:
+On commence par charger la couche SURFACE_EAU. Ce qu'on remarque vite, c'est que les surfaces ne sont pas continues. Par exemple, différents polygones coexistent pour cette même rivière:
 
 ![1554217965413](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554217965413.png)
 
@@ -245,7 +245,7 @@ Ensuite, dans la symbologie de la couche SURFACE_EAU, on clique sur Avancé et o
 
 ![1554219623722](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219623722.png)
 
-On applique et bingo, les limites entre deux surfaces d'eaux permanentes ont disparues ! 
+On applique et bingo, les limites entre deux surfaces d'eaux permanentes ont disparu ! 
 
 ![1554219675400](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219675400.png)
 
