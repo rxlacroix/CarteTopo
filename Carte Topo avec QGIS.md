@@ -1006,7 +1006,7 @@ Pour les points de vue, une deux croix roses superposées dont l'une a une petit
 
 ------
 
-Si vous avez survécu jusqu'ici, ou que vous êtes un petit malin qui n'aime pas les tutos voici le lien pour le projet QGIS avec les paramètres, il faut juste adapter les couches selon vos chemins d'accès, ou abandonner celles que vous ne voulez pas !
+Si vous avez survécu jusqu'ici, ou que vous êtes un petit malin qui n'aime pas les tutos ou qui vient directement ici, voici le lien pour le projet QGIS avec les paramètres, il faut juste adapter les couches selon vos chemins d'accès, ou abandonner celles que vous ne voulez pas !
 
 https://github.com/rxlacroix/CarteTopoGeoNight/raw/master/data/TOPO_GEONIGHT.qgz
 
