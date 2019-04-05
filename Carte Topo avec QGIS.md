@@ -134,7 +134,7 @@ Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut alle
 
   Si tout va bien, on obtient quelque chose dans ce goût-là.
 
-![1554216514840](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216514840.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216514840.png)
 
 On voit déjà bien le relief, mais l'ombrage va aider à mieux appréhender les angles.
 
@@ -142,60 +142,60 @@ On voit déjà bien le relief, mais l'ombrage va aider à mieux appréhender les
 
 En fait les ombrages : un ombrage multidirectionnel et un ombrage normal. On duplique donc la couche raster de relief (clic-droit dupliquer).
 
-![](https://media3.giphy.com/media/eobkbFQvvHoGY/giphy.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media3.giphy.com/media/eobkbFQvvHoGY/giphy.gif)
 
 Il faut adapter le rendu de façon à suffisament rendre compte du relief sans que la carte ne devienne trop sombre et que certaines zones soient totalement masquées par l'ombrage. C'est un jeu d'équilibriste entre plusieurs paramètres:
 
 - le facteur z : l'altitude doit-elle être exagérée (multipliée en l'occurence) afin de rendre compte des petits reliefs? comment se distribuent les altitudes sur mon espace à cartographier ? est-ce très plat ? est-ce très accidenté? 
 
-  ![](https://secondcropcreative.com/perfectloops/images/Mount-Susana-Time-Lapse.gif)
+  ![PAS DE PANIQUE, CA CHARGE](https://secondcropcreative.com/perfectloops/images/Mount-Susana-Time-Lapse.gif)
 
 
 - la transparence
 
-![](http://bribriange49.b.r.pic.centerblog.net/ba497e51.gif)
+![PAS DE PANIQUE, CA CHARGE](http://bribriange49.b.r.pic.centerblog.net/ba497e51.gif)
 
 - la luminosité
 
-![](https://media.giphy.com/media/kkwNMltw0h6Qo/giphy.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/kkwNMltw0h6Qo/giphy.gif)
 
 - le contraste
 
-  ![](https://media.giphy.com/media/qMA4TF7tPAIzC/giphy.gif)
+  ![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/qMA4TF7tPAIzC/giphy.gif)
 
 - la teinte : pour coloriser le raster avec plus ou moins d'intensité
 
-![](https://memegenerator.net/img/instances/67523573/what-is-your-favorite-color.jpg)
+![PAS DE PANIQUE, CA CHARGE](https://memegenerator.net/img/instances/67523573/what-is-your-favorite-color.jpg)
 
 - le mode de fusion : la façon dont les couches se comportent les unes par rapport aux autres
 
-![](https://static.mmzstatic.com/wp-content/uploads/2013/08/merlin.gif)
+![PAS DE PANIQUE, CA CHARGE](https://static.mmzstatic.com/wp-content/uploads/2013/08/merlin.gif)
 
 Pour régler 'à la volée' les différents paramètres, on va sélectionner notre couche de relief et cliquer sur le bouton style. Cela permet une visualisation en direct des actions appliquées et quand on change de couche, le menu reste ouvert.
 
 Avec un ombrage : 
 
-![1554216772546](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216772546.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216772546.png)
 
 Avec le deuxième par-dessus : 
 
-![1554216813106](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
 
-![bla](https://i.gifer.com/6Cv9.webp)
+![PAS DE PANIQUE, CA CHARGE](https://i.gifer.com/6Cv9.webp)
 
 Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
 
-![1553956092834](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553956092834.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553956092834.png)
 
 On recherche 2154 dans la barre de filtre et on choisit RGF93 / Lambert-93 (EPSG:2154).
 
 Les couches vont se déformer. 
 
-![](https://media.giphy.com/media/WJMB7T6K6VKXC/giphy.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/WJMB7T6K6VKXC/giphy.gif)
 
 Aux différentes échelles, nos couches se comportent relativement bien, on considère donc que c'est suffisant.
 
-![1554216979662](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216979662.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216979662.png)
 
 ### 1.2 Hydrographie
 
@@ -215,11 +215,11 @@ et dans étendue de découpage vous cliquez sur les ... pour définir ce que vou
 
 On commence par charger la couche SURFACE_EAU. Ce qu'on remarque vite, c'est que les surfaces ne sont pas continues. Par exemple, différents polygones coexistent pour cette même rivière:
 
-![1554217965413](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554217965413.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554217965413.png)
 
 On a en fait deux catégorie principales liées à l'attribut "RÉGIME" : les surfaces permanentes et les surfaces intermittentes. On va donc choisir une symbologie et le type "Catégorisé", avec la colonne "REGIME". On clique sur classer et nos deux catégories apparaissent en deux couleurs différentes.
 
-![1554218227464](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554218227464.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554218227464.png)
 
 On va commencer par régler le plus simple : le permanent. 
 
@@ -235,20 +235,20 @@ Si on laisse tel quel avec cette bordure noire, on s'aperçoit d'entrée d'un pr
 
 Pour résoudre ce problème, on peut fusionner les entités, mais une astuce de paramétrage de la symbologie de QGIS va nous permettre de contourner ce fastidieux traitement.
 
-![](https://media1.tenor.com/images/dfeb59044cfb1facf715b1e156d7154e/tenor.gif?itemid=9754281)
+![PAS DE PANIQUE, CA CHARGE](https://media1.tenor.com/images/dfeb59044cfb1facf715b1e156d7154e/tenor.gif?itemid=9754281)
 
 - En style de trait : Pas de ligne
 - On crée soi-même la ligne de contour du polygone en cliquant sur le + vert : on choisit "Bordure : Ligne simple" et une largeur de trait de 2.5m. La couleur est #1b8dfc.
 
-![1554219138367](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219138367.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219138367.png)
 
 Ensuite, dans la symbologie de la couche SURFACE_EAU, on clique sur Avancé et on ouvre le menu des Niveaux de symboles, que l'on active. Il faut mettre votre élément surfacique "par-dessus" votre élément linéaire, on met donc 1 en face de l'élément surfacique et on laisse zéro en face de l'élément linéaire (pas de symbole affiché, c'est que la visualisation des symboles en "mètres" a encore du mal à s'afficher correctement dans les icones)
 
-![1554219623722](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219623722.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219623722.png)
 
 On applique et bingo, les limites entre deux surfaces d'eaux permanentes ont disparu ! 
 
-![1554219675400](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219675400.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554219675400.png)
 
 Les surfaces en eaux de façon intermittentes sont représentées en gros de la façon suivante : un hachurage horizontal bleu + un ensemble de petits points bleus aléatoirement distribués.
 
@@ -262,7 +262,7 @@ On clic sur la symbologie de la catégorie Intermittent :
 
 On arrive donc à quelque chose dans ce goût-là : 
 
-![1554224159197](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554224159197.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554224159197.png)
 
 (à noter que si vous dézoomer assez, QGIS généralise vos lignes et la classe intermittente apparait alors en bleu uni un peu plus clair)
 
@@ -270,7 +270,7 @@ On a en fait besoin d'une troisième typologie, pour les bassins et autres rése
 
 ~~OUF~~ Bingo ! les deux première règles sont conservées. On a juste à en ajouter une troisième avec l'expression "NATURE" = 'Bassin'. En fait, comme la symbologie doit être la même que les surfaces continues, on fait juste un clic droit sur la règle "Permanent" pour copier le style, et on colle cela sur notre nouvelle règle.
 
-![1554301886854](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554301886854.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554301886854.png)
 
 #### 1.2.2 Autres cours d'eaux linéaires
 
@@ -283,7 +283,7 @@ Là encore, on refait une symbologie par catégorie sur le régime avec :
 
 Et on place cette couche en dessous de la couche surface, de façon à ce que les tronçons déjà représentés dans les surfaces soient masqués.
 
-![1554232205372](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554232205372.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554232205372.png)
 
 #### 1.2.3 Étiquettes
 
@@ -333,7 +333,7 @@ Une fois la bonne typo des étiquettes trouvée (peut-être plus précise, là c
 
       
 
-![1554302788134](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554302788134.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554302788134.png)
 
 C'est tout pour l'hydro à ce stade, ça pourrait être étoffer (noms des lacs, étiquetter les réservoirs, stations d'épurations, etc.), mais l'idée ici est d'avoir la base (pour obtenir des couches de données supplémentaires, voir le modèle des requêtes overpass plus bas).
 
@@ -345,7 +345,7 @@ Première couche à ajouter, les bâtiments !
 
 #### 1.3.1 Bâtiments
 
-![](http://img.playbuzz.com/image/upload/f_auto,fl_lossy,q_auto/cdn/4ba8a378-2da3-4ad2-8886-787f99a80189/9ff7dff0-5dfe-4686-8481-55d0e3345606.gif)
+![PAS DE PANIQUE, CA CHARGE](http://img.playbuzz.com/image/upload/f_auto,fl_lossy,q_auto/cdn/4ba8a378-2da3-4ad2-8886-787f99a80189/9ff7dff0-5dfe-4686-8481-55d0e3345606.gif)
 
 Une fois que vous avez récupéré le json départemental ou communal sur https://cadastre.data.gouv.fr/, décompressez-le et ajoutez-le dans QGIS.
 
@@ -356,17 +356,17 @@ La symbologie est des plus sommaires :
 - Style de trait : pas de ligne
 - On met les Étiquettes sur l'option Bloquant pour éviter de se retrouver avec plein de texte par dessus
 
-![1554304433765](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554304433765.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554304433765.png)
 
 #### 1.3.2 OSO-CESBIO
 
 Seconde couche d'occupation du sol bien pratique : le travail effectué par l'équipe du CESBIO avec des couches vectorielles départementales : http://osr-cesbio.ups-tlse.fr/echangeswww/TheiaOSO/vecteurs_2017/liste_vecteurs.html
 
-![1554304670199](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554304670199.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554304670199.png)
 
 Bon alors évidemment comme ça, on fait...
 
-![](https://thumbs.gfycat.com/WelcomeArtisticIzuthrush-size_restricted.gif)
+![PAS DE PANIQUE, CA CHARGE](https://thumbs.gfycat.com/WelcomeArtisticIzuthrush-size_restricted.gif)
 
 Mais en fait si. Il faut juste une bonne symbologie : 
 
@@ -388,7 +388,7 @@ Symbologie > Catégorisé > par "Classe"
   - Motif de points : Distance horizontale = 30 mètres, verticale = 15m, déplacement horizontal = 15m, vertical = 0m
   - Symbole simple : taille = 9 unités de cartes, couleur de trait = #96e655, taille de trait = 2 unités de carte, rotation = 90°. Le symbole c'est ça :
 
-  ![1554305868394](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554305868394.png)
+  ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554305868394.png)
 
 - Classe 36 = landes ligneuses
 
@@ -417,15 +417,15 @@ Symbologie > Catégorisé > par "Classe"
 
   - idem que 221 sauf que Symbole  = line | 
 
-![1554306651491](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554306651491.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554306651491.png)
 
 En option générale de la couche, on met Rendu = Multiplier afin que les ombrages apparaissent.
 
-![1554307086185](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554307086185.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554307086185.png)
 
 Et là, votre carte est déjà bien belle, il n'y a pratiquement plus que les routes, les noms de lieux et des petites données par-ci par-là à rajouter. CESBIO bravo.
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwHaZOYVS-FGP7y_pZS4wn3QV75HpirMuzbzYiG0e0rc7JlmFgQ)
+![PAS DE PANIQUE, CA CHARGE](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwHaZOYVS-FGP7y_pZS4wn3QV75HpirMuzbzYiG0e0rc7JlmFgQ)
 
 ### 1.4 Réseaux de transport
 
@@ -454,11 +454,11 @@ La requête pour extraire les routes et voies de chemin de fer va être la suiva
 
 Une fois que la requête est finie, on clique sur exporter en geojson
 
-![1554308281385](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554308281385.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554308281385.png)
 
 Lors de l'ajout de la couche obtenue à QGIS, il est probable qu'on vous propose plusieurs options : il faut choisir LineString.
 
-![1554308443888](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554308443888.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554308443888.png)
 
 On met ensuite en place une symbologie par Ensemble de règles
 
@@ -491,25 +491,25 @@ On met ensuite en place une symbologie par Ensemble de règles
 
 On ajoute également des niveaux de symbole comme suit : 
 
-![1554322567289](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554322567289.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554322567289.png)
 
 On applique...
 
-![1554322720583](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554322720583.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554322720583.png)
 
 Les cartes IGN ont tendance à mettre la couche des bâtiments "sous" la couche des routes. Personnellement, je préfère accentuer les bâtiments donc je les mets au-dessus. 
 
 Au-dessus : 
 
-![1554323126438](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323126438.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323126438.png)
 
 En dessous :
 
-![1554323176124](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323176124.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323176124.png)
 
 Deuxième argument : les batiments sont représentés ici avec davantage de précision (pas de tampon ni rien déformant la géométrie), il est donc juste que ce soient eux qui rognent sur les symboles de routes plutôt que l'inverse. Du coup, pour moi, au-dessus. Mordicus.
 
-![](https://66.media.tumblr.com/7405df11f63043516bbc801db5d38fdd/tumblr_nrretla1te1r745vdo4_500.gif)
+![PAS DE PANIQUE, CA CHARGE](https://66.media.tumblr.com/7405df11f63043516bbc801db5d38fdd/tumblr_nrretla1te1r745vdo4_500.gif)
 
 facultatif -> Les étiquettes : étiquettes basées sur des règles
 
@@ -525,9 +525,9 @@ Règle :
 - Répéter tous les 5000 mètres
 - Dans rendu : bien cocher Fusionner les lignes connectées... (mais ne marche pas hyper bien sur notre jeu de données)
 
-![1554323951035](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323951035.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554323951035.png)
 
-![1554324468215](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554324468215.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554324468215.png)
 
 ### 1.5 Lieux
 
@@ -539,7 +539,7 @@ NB : on ne s'occupe ici que des limites communales étant donné l'échelle envi
 
 Aucune des deux couches communales ne nous satisfaisant entièrement, on va joindre des attributs du GEOFLA sur la couche OSM. Pour cela on double-clique sur la couche OSM puis sur jointure et sur le + vert.
 
-![1554391865922](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554391865922.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554391865922.png)
 
 On joint les champs : 
 
@@ -561,7 +561,7 @@ Symbologie : Bordure : Ligne de symboles
 
 On opte pour un ensemble de règles.
 
-![](https://media1.popsugar-assets.com/files/thumbor/cHHaJYeWrCFrqNDF-q1pdJnlKTs/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2017/08/30/037/n/1922283/9aa62ef5a5a130a2_giphy-9/i/North-reject-Daenerys-queen.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media1.popsugar-assets.com/files/thumbor/cHHaJYeWrCFrqNDF-q1pdJnlKTs/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2017/08/30/037/n/1922283/9aa62ef5a5a130a2_giphy-9/i/North-reject-Daenerys-queen.gif)
 
 
 
@@ -639,13 +639,13 @@ Traduction : à partir du 7e caractère, s'il y a un tiret, on le remplace par u
 
 Les étiquettes sont ici fixées géographiquement pour travailler dessus plus facilement (voir les bonus). Néanmoins on peut adoper une stratégie de placement plus libre autour du centroïde. L'inconvénient de ce dernier système réside dans le placement parfois assez éloigné dû à la distance importante entre le centroïde et le centre de l'unité morphologique de la commune. Sinon, les placer à la main.
 
-![1554399763737](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554399763737.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554399763737.png)
 
-![1554401147136](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401147136.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401147136.png)
 
 
 
-![1554400148019](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554400148019.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554400148019.png)
 
 On va maintenant essayer de trouver ce qui fait aussi le charme des cartes topo, tous les petits noms de lieux qui assurent une certaine continuité dans la lecture de la carte et meublent un peu les espaces "vides".
 
@@ -674,11 +674,11 @@ Je ne prends ici que les lieux-dits/hameaux "habités", pas les lieux-dits cadas
 
 Donc s'il vous manque également des lieux-dits par rapport à la carte topo I.G.N., n'hésitez pas à les rajouter dans OSM : Ajouter un point > le placer à côté du groupe de bâtiments concernés par le nom du lieu > Choisir Lieu-dit ou hameau
 
-![1554401720976](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401720976.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401720976.png)
 
 Ces changements seront répercutés rapidement sur un certain nombre de tiles OSM pour le web, aussi soyez suffisamment rigoureux quand vous effectuez ces ajouts.
 
-![1554401883558](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401883558.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554401883558.png)
 
 On charge le json obtenu dans QGIS et on applique la symbologie suivante : 
 
@@ -692,7 +692,7 @@ Symbole : Aucun symbole
 - Tampon blanc 3m
 - Position cartographique
 
-![1554402273549](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554402273549.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554402273549.png)
 
 On en a fini pour les éléments principaux !
 
@@ -718,15 +718,15 @@ Pour la symbologie : Ligne simple, couleur #ff00ff, 10m d'épaisseur, cap rond
 
 Étiqueter avec name, taille 45m, condensed italic, #ff00ff, tampon blanc 4m, Position incurvée au dessus de la ligne, répéter tous les 5000m.
 
-![1554403177414](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554403177414.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554403177414.png)
 
-![1554403698598](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554403698598.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554403698598.png)
 
 Pour tous les autres éléments, je passe par des requêtes d'éléments OSM
 
 On peut rajouter tous les éléments de détail que l'on veut, on adapte juste la requête à l'aide des clés OSM (https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques).
 
-![](https://media.giphy.com/media/VcizxCUIgaKpa/giphy.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/VcizxCUIgaKpa/giphy.gif)
 
 *(Cartographe faisant ses requêtes OSM)*
 
@@ -734,7 +734,7 @@ On peut rajouter tous les éléments de détail que l'on veut, on adapte juste l
 
 Requête : 
 
-> ```
+```
 > [out:json];
 > // gather results
 > (
@@ -745,14 +745,14 @@ Requête :
 > out body;
 > 
 > > ;
-> out skel qt;
-> ```
->
-> Symbologie : Ligne simple, couleur #ff00ff, 10m d'épaisseur, cap rond
->
-> Étiqueter avec : 'voie cyclable', taille 30m, condensed italic, #ff00ff, tampon blanc 4m, Position incurvée au dessus de la ligne, répéter tous les 7500m. Fusionner les lignes connectées pour éviter la duplication d'étiquettes.
->
-> ![1554404593276](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554404593276.png)
+out skel qt;
+```
+
+Symbologie : Ligne simple, couleur #ff00ff, 10m d'épaisseur, cap rond
+
+Étiqueter avec : 'voie cyclable', taille 30m, condensed italic, #ff00ff, tampon blanc 4m, Position incurvée au dessus de la ligne, répéter tous les 7500m. Fusionner les lignes connectées pour éviter la duplication d'étiquettes.
+
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554404593276.png)
 
 ### 2.3 Sources (d'eau)
 
@@ -788,7 +788,7 @@ Symbole : symbole simple (rond)
 - Tampon 5 m blanc
 - Position : cartographique
 
-![1554405084786](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554405084786.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554405084786.png)
 
 ### 2.4 Falaises et lignes de crête
 
@@ -807,13 +807,13 @@ Requête  :
 >
 >> ;
 >out skel qt;
->```
->
->Symbologie : Ligne noire+ Lignes de symboles de ^^^ noirs ou bruns, d'espacement ou de longueur aléatoires
->
->![1554406966960](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554406966960.png)
->
->### 2.5 Cimetières
+```
+
+Symbologie : Ligne noire+ Lignes de symboles de ^^^ noirs ou bruns, d'espacement ou de longueur aléatoires
+
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554406966960.png)
+
+### 2.5 Cimetières
 
 >Requête 
 
@@ -835,13 +835,13 @@ Requête  :
 
 Symbologie : ligne noire, fond transparent, motif de croix
 
-![1554407275150](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554407275150.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554407275150.png)
 
 ### 2.6 Panneaux indicateurs rando
 
 Requête 
 
->>```
+```
 >>[out:json];
 >>// gather results
 >>(
@@ -853,19 +853,19 @@ Requête
 >>>;
 >>out skel qt;
 >>
->>```
->>
->>Symbologie : point rose, 10m, sans bordure
->>
->>Etiquette : name, regular, 35m, rose, tampon 3m, position cartographique
->>
->>![1554408986811](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554408986811.png)
->>
->>### 2.7 Bornes kilométriques / géodésiques
->>
->>(Pour l'altitude)
->>
->>```
+```
+
+Symbologie : point rose, 10m, sans bordure
+
+Etiquette : name, regular, 35m, rose, tampon 3m, position cartographique
+
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554408986811.png)
+
+### 2.7 Bornes kilométriques / géodésiques
+
+(Pour l'altitude)
+
+```
 >>[out:json];
 >>// gather results
 >>(
@@ -876,35 +876,30 @@ Requête
 >>
 >>> ;
 >>out skel qt;
->>```
->>
->>
->
->>Symbologie : 
->>
->>- symbole simple (rond)
->>- taille : 10m
->>- couleur de remplissage : noir
->>- couleur de trait : blanc
->>- largeur de trait : 1m
->>
->>Etiquette : 
->>
->>- CASE
->>  WHEN  "ele" != '0.0'
->>  THEN round( to_real( "ele"),0)
->>  END
->>- police formata condensed regular
->>- Taille : 32.5m
->>- Noir
->>- Tampon blanc 2m
->>- Position cartographique
->
->On peut mettre le même genre de symbole pour les bornes géodésiques 
->
->(filtrer sur une valeur de ref : A, B, C... par ex : "ref" LIKE '%- A')
+```
 
-> ```
+Symbologie : 
+
+- symbole simple (rond)
+- taille : 10m
+- couleur de remplissage : noir
+- couleur de trait : blanc
+- largeur de trait : 1m
+
+Etiquette : 
+
+- ```   CASE   WHEN  "ele" != '0.0'  THEN round( to_real( "ele"),0)  END  ```
+- police formata condensed regular
+- Taille : 32.5m
+- Noir
+- Tampon blanc 2m
+- Position cartographique
+
+On peut mettre le même genre de symbole pour les bornes géodésiques 
+
+(filtrer sur une valeur de ref : A, B, C... par ex : "ref" LIKE '%- A')
+
+```
 > [out:json];
 > // gather results
 > (
@@ -917,15 +912,15 @@ Requête
 > out skel qt;
 > 
 > 
-> ```
+ ```
 
-![1554409047905](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409047905.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409047905.png)
 
 ### 2.8 Antennes
 
->>Requête 
->>
->>>```
+Requête 
+
+```
 >>>[out:json];
 >>>// gather results
 >>>(
@@ -938,19 +933,19 @@ Requête
 >>>
 >>>> ;
 >>>out skel qt;
->>>```
->>>
->>>Point noir, 10m sans bordure
->>>
->>>Etiqueter avec 'Ant.', en italique, noir, 30m, tampon 3m blanc
->>>
->>>![1554409224694](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409224694.png)
->>>
->>>### 2.9 Sommets - cols - points de vue
->
->Requête sommets-cols-pts de vue
->
->>```
+```
+
+Point noir, 10m sans bordure
+
+Etiqueter avec 'Ant.', en italique, noir, 30m, tampon 3m blanc
+
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409224694.png)
+
+### 2.9 Sommets - cols - points de vue
+
+Requête sommets-cols-pts de vue
+
+```
 >>[out:json];
 >>// gather results
 >>(
@@ -964,17 +959,17 @@ Requête
 >>
 >>> ;
 >>out skel qt;
->>```
->>
->>Symbologie : point noir et altitude pour les cols et sommets, on duplique pour avoir à la fois le label de nom et le label d'altitude
->>
->>Pour les points de vue, une deux croix roses superposées dont l'une a une petite rotation
->>
->>![1554409657495](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409657495.png)
+```
+
+Symbologie : point noir et altitude pour les cols et sommets, on duplique pour avoir à la fois le label de nom et le label d'altitude
+
+Pour les points de vue, une deux croix roses superposées dont l'une a une petite rotation
+
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409657495.png)
 
 
 
-![1554409700059](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409700059.png)
+![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409700059.png)
 
 ------
 
@@ -984,7 +979,7 @@ https://github.com/rxlacroix/CarteTopoGeoNight/raw/master/data/TOPO_GEONIGHT.qgz
 
 
 
-![dontpanic](https://media.tenor.com/images/80249c8d723e7acbced483a55bfcea0d/tenor.gif)
+![PAS DE PANIQUE, CA CHARGE](https://media.tenor.com/images/80249c8d723e7acbced483a55bfcea0d/tenor.gif)
 
 
 
