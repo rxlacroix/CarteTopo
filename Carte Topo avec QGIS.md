@@ -88,17 +88,18 @@ Encore quelques instants à passer pour générer les contours : à 5m (interval
 ![1553963882459](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553963882459.png)
 
 Le temps que notre couche soit produite, prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la bonne perception du relief :
+
 (https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
 
 - les courbes de niveau, de couleur "whiskey", avec un épaississement et l'inscription de l'altitude pour celles multiples de 50 (en gros). Écartement de 5 ou 10 m selon les endroits
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
 
 ### 1.1.1 Courbes de niveau
-On commence par les courbes de niveau : l'ombrage sera réglé en fonction, pour renforcer l'effet de relief produit par les isoplèthes.
+On commence par les courbes de niveaux : l'ombrage sera réglé en fonction, pour renforcer l'effet de relief produit par les isoplèthes.
 
-(Si vous n'êtes pas satisfait des courbes produites, un lissage de la couche Contours peut être une bonne solution : Traitements > Lissage, valeurs par défaut)
+On va utiliser la couche de contour produite avant. Si celle-ci ne vous satisfait pas, il est toujours possible de la lisser : Traitements > Lissage (avec les valeurs par défaut).
 
-Symbologie de la couche contours > Ensemble de règles 
+Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut aller modifier leurs règles d'apparence en allant dans Symbologie de la couche contours > Ensemble de règles
 
 - Première règle : 
 
