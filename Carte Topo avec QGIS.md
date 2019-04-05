@@ -12,7 +12,7 @@ Allez ! On se lance sur QGIS !
 
 ## Éléments nécessaires
 
-- QGIS 3
+- QGIS 3 : https://qgis.org/fr/site/forusers/download.html
 - Police : Formata Condensed Regular / Bold / Italique ("$") ou équivalentes gratuites qui font relativement bien illusion comme Noto Sans Display Black Condensed (https://www.google.com/get/noto/) ou OPTIFob-DemiBold (https://www.ffonts.net/OPTIFob-DemiBold.font.download)
 
 ## Données utilisées
@@ -38,13 +38,13 @@ C'est assez lourd, mais cela vaut la peine. Une fois extrait cela donne ceci :
 
 ![1553955465086](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553955465086.png)
 
-Cela étant la première couche, le système de projection du projet s'y réfère et passe en système européen ETRS89 (EPSG:3035). Comme on va produire une carte à grande échelle, le niveau de détail va être important. On va donc s'intéresser à une zone particulière pas trop grande et le tuto produira ici des cartographies se situant sur des zones du Vaucluse ou à proximité.
+Comme c'est la première couche ajoutée au projet, le système de projection s'y réfère et passe en système européen ETRS89 (EPSG:3035). Afin de produire une carte à grande échelle, il faut prêter attention au niveau de détail. On va donc s'intéresser à une zone particulière pas trop grande et le tuto produira ici des cartographies se situant sur des zones du Vaucluse ou à proximité.
 
 C'est bien gentil, mais comment on se repère dans tout ça ?
 
 ![dontpanic](https://i.pinimg.com/originals/16/12/87/161287e215d0839f75f32d69625cd102.gif)
 
-On double-clic sur la couche OpenStreetMap dans l'explorateur. Le fond OSM se rajoute par dessus notre couche de relief (par défaut, une couche se rajoute toujours par-dessus la couche active). On doublc-clic sur la couche, pour accéder aux propriétés, dans le panneau Transparence, on règle l'opacité à 50% afin de voir à travers.
+On double-clique sur la couche OpenStreetMap dans l'explorateur. Le fond OSM se rajoute par dessus notre couche de relief (par défaut, une couche se rajoute toujours par-dessus la couche active). On doublc-clic sur la couche, pour accéder aux propriétés, dans le panneau Transparence, on règle l'opacité à 50% afin de voir à travers.
 
 ![1553957322486](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553957322486.png)
 
@@ -82,8 +82,7 @@ Je vous conseille d'enregistrer directement les résultats dans un fichier plut�
 
 ![1554216198508](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216198508.png)
 
-On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisie / relief dans la suite du tuto)
-
+On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisi) qui sera appelée relief dans la suite du tuto
 Encore quelques instants à passer pour générer les contours : à 5m (intervalle)  Raster > Extraction > Contours
 
 ![1553963882459](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553963882459.png)
