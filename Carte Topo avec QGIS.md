@@ -23,6 +23,7 @@ Allez ! On se lance sur QGIS !
 - Communes : Geofla / AdminExpress (http://professionnels.ign.fr/adminexpress) + export OSM https://www.data.gouv.fr/fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/
 - Relief : le EU-DEM de Copernicus. La résolution est de 25m, on peut le rééchantilloner afin d'obtenir quelque chose de plus fin et lisse (https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1)
 - Occupation du sol : vecteur départemental par le CESBIO (http://osr-cesbio.ups-tlse.fr/~oso/)
+- Données OSM via : https://overpass-turbo.eu/
 
 ## 1. Éléments de base
 
