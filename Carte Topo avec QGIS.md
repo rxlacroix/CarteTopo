@@ -174,15 +174,41 @@ Il faut adapter le rendu de façon à suffisament rendre compte du relief sans q
 
 Pour régler 'à la volée' les différents paramètres, on va sélectionner notre couche de relief et cliquer sur le bouton style. Cela permet une visualisation en direct des actions appliquées et quand on change de couche, le menu reste ouvert.
 
-Avec un ombrage : 
+Un premier ombrage (celui du dessous): 
+
+  - Type de rendu : Ombrage
+  - Altitude : 45°
+  - Azimuth : 315°
+  - Facteur Z : 1
+  - Mode de fusion : Multiplier
+  - Luminosité : +20
+  - Contraste : +60
+  - Teinte : blanche, 100%
+  - Ré-échantillonnage : avant -> Cubique / arrière -> Moyenne
+  - Opacité globale : 70%
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216772546.png)
 
 Avec le deuxième par-dessus : 
 
+  - Type de rendu : Ombrage
+  - Altitude : 45°
+  - Azimuth : 315°
+  - Facteur Z : 1.5
+  - Multidirectionnel
+  - Mode de fusion : Multiplier
+  - Luminosité : +20
+  - Contraste : +60
+  - Teinte : blanche, 100%
+  - Ré-échantillonnage : avant -> Cubique / arrière -> Moyenne
+  - Opacité globale : 30%
+
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
 
+
 ![PAS DE PANIQUE, CA CHARGE](https://media1.tenor.com/images/14314a7c98381932d10f2f5a72a96821/tenor.gif?itemid=6323771)
+
+
 
 Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
 
