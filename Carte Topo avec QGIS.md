@@ -62,13 +62,13 @@ De là on trace un rectangle un peu large autour de notre zone d'intérêt et on
 
 ![1553961007703](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553961007703.png)
 
-On ne garde que la couche découpée (clic-droit supprimer pour enlever une couche).
+On ne garde que la couche découpée (clic-droit > supprimer pour enlever une couche).
 
 Pour voir ce que cela donne, on peut rapidement visualiser un effet 3d avec les paramètres suivants : 
 
 ![1553961196957](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553961196957.png)
 
-Si de loin, l'effet est tout à fait satisfaisant, de près je trouve qu'une résolution de 25m est limite pour une cartographie à cette échelle. Par exemple ici au 1:10000 on a clairement un effet pixelisé désagréable.
+Si de loin, l'effet est tout à fait satisfaisant, de près je trouve qu'une résolution de 25m est limite pour une cartographie à cette échelle. Par exemple, ici, au 1:10000, on a clairement un effet pixelisé et désagréable.
 
 ![1553961350561](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553961350561.png)
 
@@ -88,14 +88,16 @@ Encore quelques instants à passer pour générer les contours : à 5m (interval
 ![1553963882459](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553963882459.png)
 
 Le temps que notre couche soit produite, prenons un moment pour observer le rendu de la topographie. Plusieurs éléments participent à la bonne perception du relief :
+(https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
 
 - les courbes de niveau, de couleur "whiskey", avec un épaississement et l'inscription de l'altitude pour celles multiples de 50 (en gros). Écartement de 5 ou 10 m selon les endroits
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
 - les point cotés, petits points noirs avec l'altitude indiquée
 
-On commence par les courbes de niveaux : l'ombrage sera réglé en fonction, pour renforcer l'effet de relief produit par les isoplèthes.
+### 1.1.1 Courbes de niveau
+On commence par les courbes de niveau : l'ombrage sera réglé en fonction, pour renforcer l'effet de relief produit par les isoplèthes.
 
-(Si vous n'êtes pas satisfait des courbes produites, un lissage peut être une bonne solution : Traitements > Lissage, valeurs par défaut)
+(Si vous n'êtes pas satisfait des courbes produites, un lissage de la couche Contours peut être une bonne solution : Traitements > Lissage, valeurs par défaut)
 
 Symbologie de la couche contours > Ensemble de règles 
 
@@ -143,6 +145,7 @@ Symbologie de la couche contours > Ensemble de règles
 ![1554216514840](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216514840.png)
 
 On voit déjà bien le relief, mais l'ombrage aide sensiblement à appréhender les angles.
+### 1.1.2 Ombrage
 
 En fait les ombrages : un ombrage multidirectionnel et un ombrage normal. On duplique donc la couche raster de relief (clic-droit dupliquer).
 
