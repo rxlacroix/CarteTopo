@@ -105,11 +105,7 @@ Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut alle
 
 - Première règle : 
 
-  - expression (Filtre) : 
-
-  ```
-  		"ELEV" % 50 = 0
-  ```
+  - expression (Filtre) :   ```		"ELEV" % 50 = 0  ```
 
   - L'idée est de créer une catégorie à part pour les altitudes multiples de 50, pour cela on se sert du modulo (%). 
   - Type de symbole : Ligne simple
@@ -129,11 +125,7 @@ Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut alle
 
 - Maintenant les étiquettes > Etiquettes basées sur des règles :
 
-  - expression (Filtre) : 
-
-  ```
-  		"ELEV" % 50 = 0
-  ```
+  - expression (Filtre) :   ```  	"ELEV" % 50 = 0  ```
 
   - Étiqueter avec : ELEV
   - Police : Formata Condensed 
@@ -146,7 +138,8 @@ Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut alle
 
 ![1554216514840](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216514840.png)
 
-On voit déjà bien le relief, mais l'ombrage aide sensiblement à appréhender les angles.
+On voit déjà bien le relief, mais l'ombrage va aider à mieux appréhender les angles.
+
 ### 1.1.2 Ombrage
 
 En fait les ombrages : un ombrage multidirectionnel et un ombrage normal. On duplique donc la couche raster de relief (clic-droit dupliquer).
@@ -159,7 +152,6 @@ Il faut adapter le rendu de façon à suffisament rendre compte du relief sans q
 
   ![](https://secondcropcreative.com/perfectloops/images/Mount-Susana-Time-Lapse.gif)
 
-  
 
 - la transparence
 
@@ -217,9 +209,8 @@ Pour l'hydrographie, une seule source de données ne donnant pas satisfaction, j
 
 Pour plus de praticité, je vous conseille de créer un sous-ensemble de chaque couche spécifique à votre zone d'intérêt, ce sera plus facile à travailler et styliser.
 
-```
-Traitement > Gdal > Découper des vecteurs selon une emprise > et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
-```
+``` Traitement > Gdal > Découper des vecteurs selon une emprise ```
+> et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
 
 On commence par charger la couche SURFACE_EAU. Ce qu'on remarque vite, c'est que les surfaces ne sont pas continues. Par exemple,différents polygones coexistent pour cette même rivière:
 
