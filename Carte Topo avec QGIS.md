@@ -31,7 +31,7 @@ Ouvrir QGIS 3 puis créer un nouveau projet.
 
 ### 1.1 Relief
 
-On télécharge le Modèle Numérique de Terrain (DEM) sur le site de Copernicus (inscription gratuite nécessaire). Si on travaille sur la France métropolitaine, il y a une bonne probabilité que ce soit la tuile E30N20. 
+On télécharge le Modèle Numérique de Terrain (DEM) sur le site de [Copernicus](https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1) (inscription gratuite nécessaire). Si on travaille sur la France métropolitaine, il y a une bonne probabilité que ce soit la tuile E30N20. 
 
 ![1553950143431](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553950143431.png)
 
