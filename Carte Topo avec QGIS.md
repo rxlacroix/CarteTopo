@@ -490,8 +490,11 @@ On met ici deux lignes avec une épaisseur juste supérieure à l'autre afin d'o
     - dans les deux cas, on met style de cap = Rond pour une gestion plus harmonieuse des jonctions
     
 On passe des voitures aux trains : 
+
+
 ![PAS DE PANIQUE, CA CHARGE](https://thumbs.gfycat.com/ChubbyCourteousGermanshepherd-small.gif)
-    
+
+
 - Règle n°5 : voies de chemin de fer
   - expression :  "railway" IS NOT NULL
   - symbologie : une ligne simple et une ligne de symboles
