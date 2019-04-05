@@ -489,7 +489,7 @@ On met ici deux lignes avec une épaisseur juste supérieure à l'autre afin d'o
     - une noir d'épaisseur 11m en-dessous
     - dans les deux cas, on met style de cap = Rond pour une gestion plus harmonieuse des jonctions
     
-On passe des voitures aux trains : 
+On passe de la route au rail pour finir : 
 
 
 ![PAS DE PANIQUE, CA CHARGE](https://thumbs.gfycat.com/ChubbyCourteousGermanshepherd-small.gif)
@@ -510,6 +510,9 @@ On applique...
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554322720583.png)
 
 Les cartes IGN ont tendance à mettre la couche des bâtiments "sous" la couche des routes. Personnellement, je préfère accentuer les bâtiments donc je les mets au-dessus. 
+
+
+![](https://media.giphy.com/media/kKSZXig8c3iRW/giphy.gif)
 
 Au-dessus : 
 
@@ -545,7 +548,7 @@ Règle :
 
 Dernière pierre de l'édifice principal, les noms de lieux.
 
-Pour cela on utilise trois sources de données : le GEOFLA + export OSM pour les communes et OSM pour le reste (lieux-dits / hameaux).
+Pour cela on utilise trois sources de données : le GEOFLA + ![export OSM](https://www.data.gouv.fr/fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/) pour les communes et OSM pour le reste (lieux-dits / hameaux).
 
 NB : on ne s'occupe ici que des limites communales étant donné l'échelle envisagée. 
 
