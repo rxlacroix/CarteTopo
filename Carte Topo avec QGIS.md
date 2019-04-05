@@ -342,7 +342,7 @@ Première couche à ajouter, les bâtiments !
 
 ![](http://img.playbuzz.com/image/upload/f_auto,fl_lossy,q_auto/cdn/4ba8a378-2da3-4ad2-8886-787f99a80189/9ff7dff0-5dfe-4686-8481-55d0e3345606.gif)
 
-Une fois que vous avez récupéré le json départemental ou communal sur https://cadastre.data.gouv.fr/, décompressez-le et ajouter le dans QGIS.
+Une fois que vous avez récupéré le json départemental ou communal sur https://cadastre.data.gouv.fr/, décompressez-le et ajoutez-le dans QGIS.
 
 La symbologie est des plus sommaires : 
 
