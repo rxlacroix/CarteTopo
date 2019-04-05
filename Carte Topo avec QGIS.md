@@ -181,7 +181,7 @@ Avec le deuxième par-dessus :
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
 
-![PAS DE PANIQUE, CA CHARGE](https://i.gifer.com/6Cv9.webp)
+![PAS DE PANIQUE, CA CHARGE](https://media1.tenor.com/images/14314a7c98381932d10f2f5a72a96821/tenor.gif?itemid=6323771)
 
 Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
 
