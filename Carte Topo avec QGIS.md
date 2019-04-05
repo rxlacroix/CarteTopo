@@ -44,7 +44,7 @@ C'est bien gentil, mais comment on se repère dans tout ça ?
 
 ![dontpanic](https://i.pinimg.com/originals/16/12/87/161287e215d0839f75f32d69625cd102.gif)
 
-On double-clique sur la couche OpenStreetMap dans l'explorateur. Le fond OSM se rajoute par dessus notre couche de relief (par défaut, une couche se rajoute toujours par-dessus la couche active). On doublc-clic sur la couche, pour accéder aux propriétés, dans le panneau Transparence, on règle l'opacité à 50% afin de voir à travers.
+On double-clique sur la couche OpenStreetMap dans l'explorateur. Le fond OSM se rajoute par dessus notre couche de relief (par défaut, une couche se rajoute toujours par-dessus la couche active). On double-clique sur la couche, pour accéder aux propriétés, dans le panneau Transparence, on règle l'opacité à 50% afin de voir à travers.
 
 ![1553957322486](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553957322486.png)
 
