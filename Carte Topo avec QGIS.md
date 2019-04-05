@@ -810,7 +810,7 @@ Symbole : symbole simple (rond)
 
 Requête  :
 
->```
+```
 >[out:json];
 >// gather results
 >(
@@ -831,7 +831,7 @@ Symbologie : Ligne noire+ Lignes de symboles de ^^^ noirs ou bruns, d'espacement
 
 ### 2.5 Cimetières
 
->Requête 
+Requête 
 
 > ```
 > [out:json];
