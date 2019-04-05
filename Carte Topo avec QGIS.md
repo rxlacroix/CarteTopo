@@ -161,7 +161,7 @@ Il faut adapter le rendu de façon à suffisament rendre compte du relief sans q
 
 - le contraste
 
-  ![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/qMA4TF7tPAIzC/giphy.gif)
+  ![PAS DE PANIQUE, CA CHARGE](https://thumbs.gfycat.com/SmoggyYellowHumpbackwhale-small.gif)
 
 - la teinte : pour coloriser le raster avec plus ou moins d'intensité
 
