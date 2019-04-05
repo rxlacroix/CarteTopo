@@ -12,7 +12,7 @@ Allez ! On se lance sur QGIS !
 
 ## Éléments nécessaires
 
-- QGIS 3 : [Télécharger](https://qgis.org/fr/site/forusers/download.htm){:target="_blank"}
+- QGIS 3 : [Télécharger](https://qgis.org/fr/site/forusers/download.htm)
 - Police : Formata Condensed Regular / Bold / Italique ("$") ou équivalentes gratuites qui font relativement bien illusion comme Noto Sans Display Condensed (https://www.google.com/get/noto/) ou OPTIFob-DemiBold (https://www.ffonts.net/OPTIFob-DemiBold.font.download). Le tuto est optimisé pour la police Formata Condensed.
 
 ## Données utilisées
