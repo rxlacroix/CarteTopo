@@ -434,24 +434,22 @@ Là on va faire un petit tour par https://overpass-turbo.eu/ qui va être votre 
 
 La requête pour extraire les routes et voies de chemin de fer va être la suivante :
 
-> ```
-> [out:json];
-> // gather results
-> (
->   // seulement les routes
->   way["highway"]["highway"!="cycleway"]["highway"!="proposed"]["highway"!="footway"]({{bbox}});
->   // seulement les rails
->   way["railway"]["railway"="rail"]({{bbox}});
-> 
-> );
-> // print results
-> out body;
-> 
-> > ;
-> out skel qt;
-> ```
->
-> 
+ ```
+ [out:json];
+ // gather results
+ (
+   // seulement les routes
+   way["highway"]["highway"!="cycleway"]["highway"!="proposed"]["highway"!="footway"]({{bbox}});
+   // seulement les rails
+   way["railway"]["railway"="rail"]({{bbox}});
+ 
+ );
+ // print results
+ out body;
+ 
+ > ;
+ out skel qt;
+ ```
 
 Une fois que la requête est finie, on clique sur exporter en geojson
 
@@ -597,8 +595,8 @@ Traduction : à partir du 7e caractère, s'il y a un tiret, on le remplace par u
 
 - Règle n°1 : Petites communes 
 
-  - Expression :  "POPULATION" < 5000
-  - Étiqueter avec : regexp_replace( nom, '(.{7}[^-.]*)-', '\\1-\n-')
+  - Expression :  ```"POPULATION" < 5000```
+  - Étiqueter avec : ```regexp_replace( nom, '(.{7}[^-.]*)-', '\\1-\n-')```
   - Police Formata condensed Bold
   - Taille 120m
   - Tampon blanc 3m
@@ -606,8 +604,8 @@ Traduction : à partir du 7e caractère, s'il y a un tiret, on le remplace par u
 
 - Règle n°2 : préfecture & cie
 
-  - Expression avec accents OK:  "STATUT" IN (  'Capitale d''État' , 'Préfecture de département' , 'Préfecture de région' , 'Sous-préfecture'  )
-  - Expression avec accents pas OK :  "STATUT" IN (  'Capitale d''�tat' , 'Pr�fecture de d�partement' , 'Pr�fecture de r�gion' , 'Sous-pr�fecture'  )
+  - Expression avec accents OK:  ```"STATUT" IN (  'Capitale d''État' , 'Préfecture de département' , 'Préfecture de région' , 'Sous-préfecture'  )```
+  - Expression avec accents pas OK :  ```"STATUT" IN (  'Capitale d''�tat' , 'Pr�fecture de d�partement' , 'Pr�fecture de r�gion' , 'Sous-pr�fecture'  )```
   - Étiqueter avec : nom (possibilité de mettre la formule si vous souhaitez les raccourcir de la même façon)
   - Police Formata Condensed Bold
   - Taille 180m
@@ -644,7 +642,7 @@ Traduction : à partir du 7e caractère, s'il y a un tiret, on le remplace par u
 
     - Forme : rectangle
     - Type de taille : Fixé
-    - Taille X : expression = length("nom")*85
+    - Taille X : expression = ```length("nom")*85```
     - Taille Y : 4.5m (épaisseur du trait /2)
     - Décalage Y : 75m
     - Couleur de remplissage : transparent
@@ -670,18 +668,18 @@ Pour cela, on a recours encore une fois à l'api d'overpass, avec maintenant la 
 Requête lieux-dits : 
 
 ```
->[out:json][timeout:50];
->// gather results
->(
->// query part for: “hamlet”
->node["place"="hamlet"]({{bbox}});
->node["place"="isolated_dwelling"]({{bbox}});
->
->);
->// print results
->out body;
->
->> ;
+[out:json][timeout:50];
+// gather results
+(
+// query part for: “hamlet”
+node["place"="hamlet"]({{bbox}});
+node["place"="isolated_dwelling"]({{bbox}});
+
+);
+// print results
+out body;
+
+> ;
 out skel qt;
 ```
 
@@ -716,9 +714,9 @@ Le reste c'est du bonus.
 
 Bonus de bonus : pour mettre le nombre d'habitants au dessus du nom de la commune (à adapter selon la taille des caractères en m) :
 
-- label = round( POPULATION/1000,1)
-- X = "X_CHF_LIEU"+(length(label)*50)/2
-- Y = "Y_CHF_LIEU"+125
+- label = ```round( POPULATION/1000,1)```
+- X = ```"X_CHF_LIEU"+(length(label)*50)/2```
+- Y = ```"Y_CHF_LIEU"+125```
 
 
 
@@ -751,16 +749,16 @@ On peut rajouter tous les éléments de détail que l'on veut, on adapte juste l
 Requête : 
 
 ```
-> [out:json];
-> // gather results
-> (
->   way["highway"]["highway"="cycleway"]({{bbox}});
-> 
-> );
-> // print results
-> out body;
-> 
-> > ;
+ [out:json];
+ // gather results
+ (
+   way["highway"]["highway"="cycleway"]({{bbox}});
+ 
+ );
+ // print results
+ out body;
+ 
+ > ;
 out skel qt;
 ```
 
@@ -773,19 +771,19 @@ Symbologie : Ligne simple, couleur #ff00ff, 10m d'épaisseur, cap rond
 ### 2.3 Sources (d'eau)
 
 Requête : 
->
+
 ```
->[out:json];
->// gather results
->(
->node["natural"='spring']({{bbox}});
->
->);
->// print results
->out body;
->
->> ;
->out skel qt;
+[out:json];
+// gather results
+(
+node["natural"='spring']({{bbox}});
+
+);
+// print results
+out body;
+
+> ;
+out skel qt;
 ```
 
 
@@ -811,18 +809,18 @@ Symbole : symbole simple (rond)
 Requête  :
 
 ```
->[out:json];
->// gather results
->(
->way["natural"='ridge']({{bbox}});
->way["natural"='cliff']({{bbox}});
->
->);
->// print results
->out body;
->
->> ;
->out skel qt;
+[out:json];
+// gather results
+(
+way["natural"='ridge']({{bbox}});
+way["natural"='cliff']({{bbox}});
+
+);
+// print results
+out body;
+
+> ;
+out skel qt;
 ```
 
 Symbologie : Ligne noire+ Lignes de symboles de ^^^ noirs ou bruns, d'espacement ou de longueur aléatoires
@@ -833,22 +831,18 @@ Symbologie : Ligne noire+ Lignes de symboles de ^^^ noirs ou bruns, d'espacement
 
 Requête 
 
-> ```
-> [out:json];
-> // gather results
-> (
->   way["landuse"='cemetery']({{bbox}});
-> 
-> );
-> // print results
-> out body;
-> 
-> > ;
-> out skel qt;
-> ```
->
-> 
-
+```
+ [out:json];
+ // gather results
+ (
+   way["landuse"='cemetery']({{bbox}});
+ );
+ // print results
+ out body;
+ 
+ > ;
+ out skel qt;
+ ```
 Symbologie : ligne noire, fond transparent, motif de croix
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554407275150.png)
@@ -858,17 +852,16 @@ Symbologie : ligne noire, fond transparent, motif de croix
 Requête 
 
 ```
->>[out:json];
->>// gather results
->>(
->>node["hiking"='yes']["information" = 'guidepost']["name"~""]({{bbox}});
->>
->>);
->>// print results
->>out body;
->>>;
->>out skel qt;
->>
+[out:json];
+// gather results
+(
+node["hiking"='yes']["information" = 'guidepost']["name"~""]({{bbox}});
+
+);
+// print results
+out body;
+>;
+out skel qt;
 ```
 
 Symbologie : point rose, 10m, sans bordure
@@ -882,16 +875,16 @@ Etiquette : name, regular, 35m, rose, tampon 3m, position cartographique
 (Pour l'altitude)
 
 ```
->>[out:json];
->>// gather results
->>(
->>node["highway"='milestone']({{bbox}});
->>);
->>// print results
->>out body;
->>
->>> ;
->>out skel qt;
+[out:json];
+// gather results
+(
+node["highway"='milestone']({{bbox}});
+);
+// print results
+out body;
+
+> ;
+out skel qt;
 ```
 
 Symbologie : 
@@ -916,18 +909,16 @@ On peut mettre le même genre de symbole pour les bornes géodésiques
 (filtrer sur une valeur de ref : A, B, C... par ex : "ref" LIKE '%- A')
 
 ```
-> [out:json];
-> // gather results
-> (
-> node["man_made"='survey_point']({{bbox}});
-> );
-> // print results
-> out body;
-> 
-> > ;
-> out skel qt;
-> 
-> 
+[out:json];
+// gather results
+(
+ node["man_made"='survey_point']({{bbox}});
+ );
+ // print results
+ out body;
+ 
+ > ;
+ out skel qt; 
  ```
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554409047905.png)
@@ -937,18 +928,16 @@ On peut mettre le même genre de symbole pour les bornes géodésiques
 Requête 
 
 ```
->>>[out:json];
->>>// gather results
->>>(
->>>node["tower:type"='communication']({{bbox}});
->>>node["man_made"='antenna']({{bbox}});
->>>
->>>);
->>>// print results
->>>out body;
->>>
->>>> ;
->>>out skel qt;
+[out:json];
+// gather results
+(
+node["tower:type"='communication']({{bbox}});
+node["man_made"='antenna']({{bbox}});
+);
+// print results
+out body;
+> ;
+out skel qt;
 ```
 
 Point noir, 10m sans bordure
@@ -962,19 +951,19 @@ Etiqueter avec 'Ant.', en italique, noir, 30m, tampon 3m blanc
 Requête sommets-cols-pts de vue
 
 ```
->>[out:json];
->>// gather results
->>(
->>node["natural"='peak']["name"~""]({{bbox}});
->>node["natural"='saddle']["name"~""]({{bbox}});
->>node["tourism"='viewpoint']({{bbox}});
->>
->>);
->>// print results
->>out body;
->>
->>> ;
->>out skel qt;
+[out:json];
+// gather results
+(
+node["natural"='peak']["name"~""]({{bbox}});
+node["natural"='saddle']["name"~""]({{bbox}});
+node["tourism"='viewpoint']({{bbox}});
+
+);
+// print results
+out body;
+
+> ;
+out skel qt;
 ```
 
 Symbologie : point noir et altitude pour les cols et sommets, on duplique pour avoir à la fois le label de nom et le label d'altitude
