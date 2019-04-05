@@ -72,7 +72,7 @@ Si de loin, l'effet est tout à fait satisfaisant, de près je trouve qu'une ré
 
 ![1553961350561](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553961350561.png)
 
-Pour pallier à cela, on va rééchantilloner notre raster à une résolution de 5 m (taille de la cellule de la région GRASS) avec la fonction resamp.bspline de GRASS : 
+Pour remédier à cela, on va rééchantilloner notre raster à une résolution de 5 m (taille de la cellule de la région GRASS) avec la fonction resamp.bspline de GRASS : 
 
 ![1553961715302](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553961715302.png)
 
@@ -209,7 +209,7 @@ Avec le deuxième par-dessus :
 
 
 
-Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
+Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour ça, on clique sur le bouton de projection : 
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553956092834.png)
 
