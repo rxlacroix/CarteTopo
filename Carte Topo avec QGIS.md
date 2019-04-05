@@ -773,8 +773,8 @@ Symbologie : Ligne simple, couleur #ff00ff, 10m d'épaisseur, cap rond
 ### 2.3 Sources (d'eau)
 
 Requête : 
-
->```
+>
+```
 >[out:json];
 >// gather results
 >(
@@ -786,8 +786,8 @@ Requête :
 >
 >> ;
 >out skel qt;
->```
->
+```
+
 
 Symbole : symbole simple (rond)
 
