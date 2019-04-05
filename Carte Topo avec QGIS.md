@@ -191,7 +191,7 @@ Avec le deuxième par-dessus :
 
 ![1554216813106](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216813106.png)
 
-![](https://i.gifer.com/6Cv9.gif)
+![bla](https://i.gifer.com/6Cv9.gif)
 
 Nos opérations rasters terminées, on va changer de système de projection afin de bénéficier d'une déformation cartographique plus propice à la visualisation du territoire français : RGF93 / Lambert-93 (EPSG:2154). Pour cela, on clique sur le bouton de projection : 
 
