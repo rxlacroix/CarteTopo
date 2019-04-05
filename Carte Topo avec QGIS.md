@@ -286,9 +286,9 @@ Et on place cette couche en dessous de la couche surface, de façon à ce que le
 
 Il reste maintenant à ajouter les étiquettes des principaux cours d'eau. Le plus difficile. Pour cela on se sert de la couche CoursEau_FXX de la BD Sandre. Si cette couche est la meilleure, elle n'est néanmoins pas parfaite. Les 
 
-- remplacer les L' par des l' :  regexp_replace( "NomEntiteH", 'L''','l''')
-- remplacer les "La " par des "la " :  regexp_replace( "NomEntiteH", 'La ','la ')
-- remplacer les "Le " par des "le" : regexp_replace( "NomEntiteH", 'Le ','le ')
+- remplacer les L' par des l' :  ```regexp_replace( "NomEntiteH", 'L''','l''')```
+- remplacer les "La " par des "la " :  ```regexp_replace( "NomEntiteH", 'La ','la ')```
+- remplacer les "Le " par des "le" : ```regexp_replace( "NomEntiteH", 'Le ','le ')```
 
 Une fois la bonne typo des étiquettes trouvée (peut-être plus précise, là c'est juste l'essentiel) : 
 
