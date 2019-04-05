@@ -198,7 +198,7 @@ Aux différentes échelles, nos couches se comportent relativement bien, on cons
 
 ![PAS DE PANIQUE, CA CHARGE](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216979662.png)
 
-On ajoute [plus bas] la suite les bornes kilométriques et géodésiques pour les points cotés.
+On ajoute [plus bas](https://github.com/rxlacroix/CarteTopoGeoNight/blob/master/Carte%20Topo%20avec%20QGIS.md#27-bornes-kilom%C3%A9triques--g%C3%A9od%C3%A9siques) la suite les bornes kilométriques et géodésiques pour les points cotés.
 
 ### 1.2 Hydrographie
 
