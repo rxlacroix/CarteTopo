@@ -82,12 +82,9 @@ Je vous conseille d'enregistrer directement les résultats dans un fichier plut�
 
 ![1554216198508](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554216198508.png)
 
-On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisi) qui sera appelée relief dans la suite du tuto
-Encore quelques instants à passer pour générer les contours : à 5m (intervalle)  Raster > Extraction > Contours
+On ne va garder que la couche Resampled BSpline (ou bien nommée comme vous l'avez choisi) qui sera appelée relief dans la suite du tuto.
 
-![1553963882459](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553963882459.png)
-
-Le temps que notre couche soit produite, prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la bonne perception du relief :
+Prenons un moment pour observer le rendu de la topographie. Deux éléments principaux participent à la bonne perception du relief :
 
 (https://www.geoportail.gouv.fr/carte?c=5.018849284772357,44.18390959569555&z=15&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
 
@@ -95,9 +92,14 @@ Le temps que notre couche soit produite, prenons un moment pour observer le rend
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
 
 ### 1.1.1 Courbes de niveau
-On commence par les courbes de niveaux : l'ombrage sera réglé en fonction, pour renforcer l'effet de relief produit par les isoplèthes.
 
-On va utiliser la couche de contour produite avant. Si celle-ci ne vous satisfait pas, il est toujours possible de la lisser : Traitements > Lissage (avec les valeurs par défaut).
+On commence par générer les contours, les courbes de niveau, car l'ombrage se réglé en fonction. On va utiliser des intervalles de 5m.
+  ```Raster > Extraction > Contours  ```
+
+![1553963882459](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1553963882459.png)
+
+
+Si la couche de contours produite ne vous satisfait pas, il est toujours possible de la lisser : Traitements > Lissage (avec les valeurs par défaut).
 
 Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut aller modifier leurs règles d'apparence en allant dans Symbologie de la couche contours > Ensemble de règles
 
