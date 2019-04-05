@@ -468,6 +468,9 @@ On met ensuite en place une symbologie par Ensemble de règles
     - une rouge à 12m d'épaisseur au-dessus
     - une noire à 14m d'épaisseur en dessous
     - dans les deux cas, on met style de cap = Rond pour une gestion plus harmonieuse des jonctions
+On met ici deux lignes avec une épaisseur juste supérieure à l'autre afin d'obtenir des "bordures de lignes".    
+![PAS DE PANIQUE, CA CHARGE](https://media.giphy.com/media/5adhGVrAbxdi8/giphy.gif)
+    
 - Règle n°2 : départementales
   - expression :  "highway" IN ('secondary', 'secondary_link')
   - symbologie : deux couches de lignes simples
