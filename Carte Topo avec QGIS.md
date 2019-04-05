@@ -91,7 +91,7 @@ Prenons un moment pour observer le rendu de la topographie. Deux éléments prin
 - les courbes de niveau, de couleur "whiskey", avec un épaississement et l'inscription de l'altitude pour celles multiples de 50 (en gros). Écartement de 5 ou 10 m selon les endroits
 - un estompage / ombrage gris léger : en observant un peu on s'aperçoit qu'il y a sans doute un estompage multidirectionnel (certaines faces et un estompage d'une lumière au nord-ouest.
 
-### 1.1.1 Courbes de niveau
+#### 1.1.1 Courbes de niveau
 
 On commence par générer les contours, les courbes de niveau, car l'ombrage se réglé en fonction. On va utiliser des intervalles de 5m.
   ```Raster > Extraction > Contours  ```
@@ -140,7 +140,7 @@ Une fois la couche de contours à la hauteur (arf) de vos attentes, on peut alle
 
 On voit déjà bien le relief, mais l'ombrage va aider à mieux appréhender les angles.
 
-### 1.1.2 Ombrage
+#### 1.1.2 Ombrage
 
 En fait les ombrages : un ombrage multidirectionnel et un ombrage normal. On duplique donc la couche raster de relief (clic-droit dupliquer).
 
@@ -212,6 +212,8 @@ Pour plus de praticité, je vous conseille de créer un sous-ensemble de chaque 
 ``` Traitement > Gdal > Découper des vecteurs selon une emprise ```
 > et dans étendue de découpage vous cliquez sur les ... pour définir ce que vous voulez garder.
 
+#### 1.2.1 Surfaces
+
 On commence par charger la couche SURFACE_EAU. Ce qu'on remarque vite, c'est que les surfaces ne sont pas continues. Par exemple, différents polygones coexistent pour cette même rivière:
 
 ![1554217965413](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554217965413.png)
@@ -271,7 +273,9 @@ On a en fait besoin d'une troisième typologie, pour les bassins et autres rése
 
 ![1554301886854](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554301886854.png)
 
-Il manque maintenant les autres cours d'eau que l'on a et que l'on représente par le linéaire de la couche TRONCON_COURS_EAU.
+#### 1.2.2 Autres cours d'eaux linéaires
+
+Il manque maintenant les autres cours d'eau que l'on a dans la couche TRONCON_COURS_EAU.
 
 Là encore, on refait une symbologie par catégorie sur le régime avec : 
 
@@ -282,7 +286,7 @@ Et on place cette couche en dessous de la couche surface, de façon à ce que le
 
 ![1554232205372](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554232205372.png)
 
-
+#### 1.2.3 Étiquettes
 
 Il reste maintenant à ajouter les étiquettes des principaux cours d'eau. Le plus difficile. Pour cela on se sert de la couche CoursEau_FXX de la BD Sandre. Si cette couche est la meilleure, elle n'est néanmoins pas parfaite. Les 
 
@@ -340,6 +344,8 @@ Un peu de couleur ne ferait pas de mal à ce fond de carte. On s'occupe maintena
 
 Première couche à ajouter, les bâtiments ! 
 
+#### 1.3.1 Bâtiments
+
 ![](http://img.playbuzz.com/image/upload/f_auto,fl_lossy,q_auto/cdn/4ba8a378-2da3-4ad2-8886-787f99a80189/9ff7dff0-5dfe-4686-8481-55d0e3345606.gif)
 
 Une fois que vous avez récupéré le json départemental ou communal sur https://cadastre.data.gouv.fr/, décompressez-le et ajoutez-le dans QGIS.
@@ -352,6 +358,8 @@ La symbologie est des plus sommaires :
 - On met les Étiquettes sur l'option Bloquant pour éviter de se retrouver avec plein de texte par dessus
 
 ![1554304433765](https://raw.githubusercontent.com/rxlacroix/CarteTopoGeoNight/master/img/1554304433765.png)
+
+#### 1.3.2 OSO-CESBIO
 
 Seconde couche d'occupation du sol bien pratique : le travail effectué par l'équipe du CESBIO avec des couches vectorielles départementales : http://osr-cesbio.ups-tlse.fr/echangeswww/TheiaOSO/vecteurs_2017/liste_vecteurs.html
 
