@@ -1,5 +1,3 @@
-# CarteTopoGeoNight
-
 # Carte Topo avec QGIS
 
 On propose ici de réaliser un équivalent d'une carte topographique de l'IGN avec QGIS et des données ouvertes (ou presque) et gratuites.
