@@ -308,6 +308,9 @@ On a en fait besoin d'une troisième typologie, pour les bassins et autres rése
 
 Il manque maintenant les autres cours d'eau que l'on a dans la couche TRONCON_COURS_EAU.
 
+Si l'on veut coller plus exclusivement aux cours d'eau des cartes topo IGN, on peut utiliser le filtre suivant : 
+``` "FICTIF"='Non' AND ("PREC_PLANI" != '5' AND "PREC_ALTI" != '1')```
+
 Là encore, on refait une symbologie par catégorie sur le régime avec : 
 
 - Permanent : ligne, 3.5m d'épaisseur, couleur #1b8dfc
