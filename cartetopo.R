@@ -214,21 +214,20 @@ ggplot() +
   geom_sf(data = foretsfeuillus_pts, colour = "#96e655", fill = NA, size = 0.1, shape = 1) +
   geom_sf(data = foretsconi, fill = "#d2fab9", lwd = 0, alpha = 0.5) +
   geom_sf(data = foretsconi_pts, colour = "#96e655", fill = NA, size = 0.1, shape = 2) +
-  geom_sf(data = vignes, fill = "white", lwd = 0.1, colour = "#96e655", alpha = 0.7) +
-  geom_sf(data = vignes_pts, color = "#96e655", size = 2, shape = 124) +
-  geom_sf(data = autres, fill = "white", lwd = 0, alpha = 0.7) +
-  geom_sf(data = vergers, fill = "white", lwd = 0, alpha = 0.7) +
+  geom_sf(data = vignes, fill = "white", lwd = 0, colour = "#96e655", alpha = 0.7) +
+  geom_sf(data = vignes_pts, colour = "#96e655", size = 2, shape = 124) +
+  geom_sf(data = autres, fill = "white", lwd = 0, alpha = 0.7,colour = "white") +
+  geom_sf(data = vergers, fill = "white", lwd = 0, alpha = 0.7,colour = "white") +
   geom_sf(data = vergers_pts, colour = "#96e655", fill = NA, size = 0.1, shape = 1) +
-  geom_sf(data = prairies, fill = "#d2fab9", lwd = 0, alpha = 0.7) +
+  geom_sf(data = prairies, fill = "#d2fab9", lwd = 0, alpha = 0.7,colour = "white") +
 
   # hydro
   geom_sf(data = hydro_troncon_perm$geom, colour = "#1b8dfc", size = 0.25) +
   geom_sf(data = hydro_troncon_inter$geom, colour = "#1b8dfc", size = 0.25, lty = "88") +
 
-  geom_sf(data = hydro_surf_inter, fill = "white", lwd = 0) +
+  geom_sf(data = hydro_surf_inter, fill = "white", lwd = 0, colour = "white") +
   geom_sf(data = hydro_surf_inter_pts, colour = "#1b8dfc", fill = NA, size = 0.1) +
   geom_sf(data = hydro_surf_perm, fill = "#b3d9fe", colour = "#1b8dfc", lwd = 0.1) +
-  
   # contours
   geom_sf(data = contours$geom, colour = "#d7a573", size = 0.1) +
   geom_sf(data = contours_50$geom, colour = "#d7a573", size = 0.3) +
@@ -247,7 +246,7 @@ ggplot() +
   geom_sf(data = communes, colour = "black", fill = NA, size = 0.3, linetype = "dotted") +
 
   # batiments
-  geom_sf(data = batiments$geom, fill = "black", lwd = 0) +
+  geom_sf(data = batiments$geom, fill = "black", lwd = 0, colour = "black") +
 
   # rando
   geom_sf(data = rando, colour = "#ff00ff", size = 0.55) +
